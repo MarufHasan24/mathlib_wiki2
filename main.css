@@ -1,0 +1,437 @@
+.body.Day {
+  background: #fff;
+  color: #222;
+}
+.body.Night {
+  background: #222;
+  color: #fff;
+}
+/* author starts */
+div.author {
+  padding: 0;
+  color: #fff;
+  font-family: "lato";
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(34, 34, 34, 0.6);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-image: url("./authorBg.jpg");
+}
+div.author div.text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: left;
+}
+div.author div.text h2.heading2 {
+  width: auto;
+  color: #fff;
+  font-family: "lato";
+  margin: 0%;
+  padding: 1%;
+  text-align: left;
+}
+div.author div.text h2.heading2 span.helloWorld {
+  font-family: "reliway";
+  font-size: 10vh;
+  text-transform: capitalize;
+  white-space: nowrap;
+  text-align: left;
+}
+div.author div.text h2.heading2 span.iAmMaruf {
+  font-family: "reliway";
+  font-weight: 400;
+  font-size: 5vh;
+  text-align: left;
+}
+div.author div.text section.typing {
+  padding: 0 1%;
+  font-size: 5vh;
+  display: inline-flex;
+  flex-direction: row;
+}
+div.author div.text section.typing span.still {
+  font-size: 5vh;
+}
+div.author div.text section.typing div.typeAnimation {
+  overflow: hidden;
+  height: 8.1vh;
+  transition: none;
+}
+div.author div.text section.typing div.typeAnimation ul.list {
+  padding-left: 3%;
+  list-style: none;
+  overflow: hidden;
+  transition: none;
+  width: max-content;
+  animation: slide 24s steps(4) infinite;
+}
+div.author div.text section.typing div.typeAnimation ul.list li {
+  position: relative;
+  color: transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  top: 0%;
+  width: auto;
+  transition: none;
+}
+div.author div.text section.typing div.typeAnimation ul.list li span {
+  overflow: hidden;
+  transition: none;
+  padding-right: calc(1% + 1.1vh);
+  font-size: 5vh;
+}
+div.author div.text section.typing div.typeAnimation ul.list li span::before {
+  content: attr(data-text);
+  position: absolute;
+  height: 100%;
+  width: auto;
+  color: #fff;
+  margin: 1% 0%;
+  border-right: aqua solid 1px;
+  left: 0;
+  font-size: 5vh;
+  overflow: hidden;
+  animation: typeing 3s steps(var(--i)) infinite;
+  transition: none;
+}
+div.author div.imageBox {
+  padding: 1vh;
+}
+div.author div.imageBox section.container {
+  position: relative;
+  overflow: hidden;
+  width: 40vh;
+  height: 48vh;
+}
+div.author div.imageBox section.container div.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 48vh;
+  width: 160vh;
+  animation: imageSlide 30s linear infinite;
+}
+div.author div.imageBox section.container div.slider div.image {
+  position: relative;
+  height: 48vh;
+  width: 40vh;
+  float: left;
+}
+div.author div.imageBox section.container div.slider div.image.img1 {
+  background: url("kpc2021.jpg");
+  background-position: center;
+  background-size: cover;
+}
+div.author div.imageBox section.container div.slider div.image.img2 {
+  background: url("authorBg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+div.author div.imageBox section.container div.slider div.image.img3 {
+  background: url("MathlibLogo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+div.author div.text div.more {
+  color: #fff;
+  font-size: 3vh;
+  position: relative;
+  padding-bottom: 1.5vh;
+}
+div.author div.text div.more a {
+  position: relative;
+  color: #fff;
+  padding: 1vh;
+  text-decoration: none;
+  border-radius: 1vh;
+  border: white 0.3vh groove;
+  background: rgb(27, 208, 221);
+}
+div.author div.text div.more a::after {
+  content: ">>";
+  color: rgb(27, 208, 221);
+  transform: translateX(3vh);
+  position: absolute;
+}
+@media screen and (max-width: 770px) {
+  div.author {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("./authorBg720.jpg");
+  }
+  div.author div.text h2.heading2 span.helloWorld {
+    font-size: 15vw;
+  }
+  div.author div.text h2.heading2 span.iAmMaruf {
+    font-size: 5vw;
+  }
+  div.author div.text section.typing {
+    font-size: 5vw;
+  }
+  div.author div.text section.typing span.still {
+    font-size: 5vw;
+  }
+  div.author div.text section.typing div.typeAnimation {
+    height: 8.1vw;
+  }
+  div.author div.text section.typing div.typeAnimation ul.list li span {
+    padding-right: calc(1% + 1.1vw);
+    font-size: 5vw;
+  }
+  div.author div.text section.typing div.typeAnimation ul.list li span::before {
+    content: attr(data-text);
+    font-size: 5vw;
+  }
+  div.author div.text div.more {
+    font-size: 3vw;
+    padding-bottom: 1.5vw;
+  }
+  div.author div.text div.more a {
+    padding: 1vw;
+    border-radius: 1vw;
+    border: white 0.3vw groove;
+  }
+  div.author div.text div.more a::after {
+    transform: translateX(3vw);
+  }
+  div.author div.imageBox {
+    width: 100vw;
+    padding: 1vw 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div.author div.imageBox section.container {
+    position: relative;
+    overflow: hidden;
+    width: 72vw;
+    height: 28vw;
+  }
+  div.author div.imageBox section.container div.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 28vw;
+    width: 88vw;
+    animation: none;
+  }
+  div.author div.imageBox section.container div.slider div.image {
+    position: relative;
+    height: 28vw;
+    width: 22vw;
+    margin: 1vw;
+    float: left;
+  }
+}
+@keyframes typeing {
+  0%,
+  100% {
+    width: 0%;
+  }
+  45%,
+  55% {
+    width: 100%;
+  }
+}
+@keyframes slide {
+  0%,
+  100% {
+    top: 0%;
+  }
+  50% {
+    top: -400%;
+  }
+}
+@keyframes imageSlide {
+  0% {
+    left: 0vh;
+  }
+  5% {
+    left: 0vh;
+  }
+  15% {
+    left: -40vh;
+  }
+  35% {
+    left: -40vh;
+  }
+  45% {
+    left: -80vh;
+  }
+  65% {
+    left: -80vh;
+  }
+  75% {
+    left: -120vh;
+  }
+  95% {
+    left: -120vh;
+  }
+  100% {
+    left: -120vh;
+  }
+}
+/* author ends */
+div[data-species="section"] {
+  height: auto;
+  width: 98vw;
+  margin: 1% 1vw;
+  padding: 1vh 1vw;
+  border-radius: 0.5vw;
+}
+/* description starts */
+div.description {
+  background: linear-gradient(160deg, #0093e9aa 0%, #73e2b8aa 100%);
+}
+div.description ol.list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 5vh;
+  list-style-type: disc;
+}
+@media screen and (max-width: 770px) {
+  div.description ol.list {
+    margin: 0 5vw;
+  }
+}
+/* description ends */
+/* installation starts */
+div.installation {
+  background: linear-gradient(
+    225deg,
+    #ff3cacaa 0%,
+    #784ba0aa 50%,
+    #2b86c5aa 100%
+  );
+}
+/* installation end */
+/* user strats */
+div.uses {
+  background: linear-gradient(32deg, #f4d03faa 0%, #16a085aa 100%), #16a08577;
+}
+/* user ends */
+/* wiki starts */
+div.wiki {
+  background: linear-gradient(-90deg, #3ae1ffaa 25%, #0e2d92aa 100%);
+}
+div.wiki div.more {
+  color: #fff;
+  font-size: 3vh;
+  position: relative;
+  padding-bottom: 1.5vh;
+}
+div.wiki div.more a {
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  position: relative;
+  color: #fff;
+  padding: 1vh;
+  border-radius: 1vh;
+  text-decoration: none;
+  background: linear-gradient(90deg, #3ae1ff 25%, #0e2d92 100%);
+}
+div.wiki div.more a::after {
+  content: ">>";
+  color: inherit;
+  transform: translateX(2vh);
+  position: absolute;
+  transition: 0.3s;
+}
+div.wiki div.more a:hover::after {
+  transform: translateX(3.5vh);
+}
+/* wiki ends */
+/* troubleshoot starts */
+div.troubleshoot {
+  background: linear-gradient(90deg, #fad961aa 0%, #f76b1caa 100%);
+}
+/* troubleshoot ends */
+/* change log starts */
+div.changeLog {
+  background: linear-gradient(135deg, #8bc6ecaa 0%, #565999aa 100%);
+}
+div.changeLog h4 {
+  margin: 0 0 0 2%;
+}
+div.changeLog ul.primary li {
+  margin: 0 0 0 6%;
+  font-weight: 450;
+}
+div.changeLog ul.primary ul.secondery li {
+  margin: 0 0 0 3%;
+  font-weight: 450;
+}
+/* change log ends */
+/* contact starts */
+footer.contact[data-species="section"] {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100vw;
+  margin: 1% 0 0 0;
+  border-radius: 0;
+  background: linear-gradient(19deg, #21d4fdaa 0%, #b721ffaa 100%);
+}
+footer.contact[data-species="section"] div ul {
+  display: flex;
+  text-align: left;
+  justify-content: left;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+}
+footer.contact[data-species="section"] div ul li {
+  font-size: 20px;
+}
+footer.contact[data-species="section"] div ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+footer.contact[data-species="section"] div ul li a:hover {
+  font-size: 22px;
+}
+footer.contact[data-species="section"] div ul li:hover {
+  font-size: 22px;
+}
+/* contact */
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #003973 0%,
+    #e5e5be 51%,
+    #003973 100%
+  );
+}
+.btn-grad {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
