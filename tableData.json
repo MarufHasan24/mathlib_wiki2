@@ -12,7 +12,7 @@
     },
     "work": {
       "Mwork": "calculate",
-      "work": "gap between 2 dates (defult : current day to another day)"
+      "work": "the gap between 2 dates (defult : current day to another day)"
     }
   },
   "average": {
@@ -23,7 +23,7 @@
     "work": {
       "Rtype": "an Array",
       "Mwork": "calculate",
-      "work": "average"
+      "work": "the average"
     }
   },
   "c2Fr": {
@@ -33,7 +33,7 @@
     },
     "work": {
       "Mwork": "Convert",
-      "work": "celcius into fahrenheit"
+      "work": "the celcius into fahrenheit"
     }
   },
   "caller": {
@@ -44,7 +44,7 @@
     },
     "work": {
       "Mwork": "Call",
-      "work": "right converter then convert"
+      "work": "the right converter then convert"
     }
   },
   "combo": {
@@ -54,8 +54,8 @@
       "data": ["n", "r"]
     },
     "work": {
-      "Mwork": "Findout",
-      "work": "combination of"
+      "Mwork": "find out",
+      "work": "the combination of"
     }
   },
   "cm2In": {
@@ -65,7 +65,7 @@
     },
     "work": {
       "Mwork": "Convert",
-      "work": "centimeter into inch"
+      "work": "the centimeter into inch"
     }
   },
   "cosx": {
@@ -75,8 +75,8 @@
       "Type": ["a radian (type string) or degree (type number)"]
     },
     "work": {
-      "Mwork": "findout",
-      "work": "cos value of radian or degree"
+      "Mwork": "find out",
+      "work": "the cos value of radian or degree"
     }
   },
   "cosec": {
@@ -85,8 +85,8 @@
       "data": ["radian"]
     },
     "work": {
-      "Mwork": "findout",
-      "work": "cosec value of radian"
+      "Mwork": "find out",
+      "work": "the cosec value of radian"
     }
   },
   "cot": {
@@ -95,8 +95,8 @@
       "data": ["radian"]
     },
     "work": {
-      "Mwork": "findout",
-      "work": "cot value of radian"
+      "Mwork": "find out",
+      "work": "the cot value of radian"
     }
   },
   "dememo": {
@@ -111,7 +111,7 @@
     },
     "work": {
       "Mwork": "Bring",
-      "work": "memorised data from file system",
+      "work": "the memorised data from file system",
       "Rtype": "an Object contains expected data, date and time of saved data"
     }
   },
@@ -127,7 +127,7 @@
     },
     "work": {
       "Mwork": "delete",
-      "work": "memorised data from file system",
+      "work": "the memorised data from file system",
       "Rtype": "<i>a confarmetion string</i>"
     }
   },
@@ -138,8 +138,8 @@
     },
     "work": {
       "Mwork": "Convert",
-      "work": "dgree into radian",
-      "Rtype": "an Object "
+      "work": "the dgree into radian",
+      "Rtype": "an Object"
     }
   },
   "fact": {
@@ -150,7 +150,7 @@
     },
     "work": {
       "Mwork": "calculate",
-      "work": "factorial like (9! = 1*2*3*4*5*6*7*8*9 = 362880) "
+      "work": "the factorial like (9! = 1*2*3*4*5*6*7*8*9 = 362880) "
     }
   },
   "fr2C": {
@@ -160,7 +160,7 @@
     },
     "work": {
       "Mwork": "Convert",
-      "work": "fahrenheit into celcius"
+      "work": "the fahrenheit into celcius"
     }
   },
   "ft2M": {
@@ -170,7 +170,7 @@
     },
     "work": {
       "Mwork": "Convert",
-      "work": "feet into meter"
+      "work": "the feet into meter"
     }
   },
   "fract": {
@@ -181,7 +181,7 @@
     },
     "work": {
       "Mwork": "convert",
-      "work": "decimal number into fractional number",
+      "work": "the decimal number into fractional number",
       "Rtype": "a string"
     }
   },
@@ -192,7 +192,7 @@
     },
     "work": {
       "Mwork": "Convert",
-      "work": "inch to centimeter"
+      "work": "the inch to centimeter"
     }
   },
   "km2Mile": {
@@ -202,7 +202,7 @@
     },
     "work": {
       "Mwork": "Convert",
-      "work": "inch to centimeter"
+      "work": "the inch to centimeter"
     }
   },
   "leapYear": {
@@ -212,8 +212,8 @@
     },
     "work": {
       "Mwork": "calculate",
-      "work": "year is leapYear or not",
-      "Rtype": "a boolearn "
+      "work": "the year is leapYear or not",
+      "Rtype": "a boolearn value"
     }
   },
   "linearEq": {
@@ -225,7 +225,7 @@
     },
     "work": {
       "Mwork": "solve",
-      "work": "equations",
+      "work": "the equations",
       "Rtype": "an Array"
     }
   },
@@ -241,7 +241,7 @@
     },
     "work": {
       "Mwork": "calculate",
-      "work": "logarithom of custom base and angle"
+      "work": "the logarithom of custom base and angle"
     }
   },
   "memo": {
@@ -257,7 +257,7 @@
     },
     "work": {
       "Mwork": "memorise",
-      "work": "a number or an array"
+      "work": "the a number or an array"
     }
   },
   "m2Ft": {
@@ -267,7 +267,7 @@
     },
     "work": {
       "Mwork": "convert",
-      "work": "feet"
+      "work": "the feet"
     }
   },
   "mile2Km": {
@@ -277,7 +277,7 @@
     },
     "work": {
       "Mwork": "convert",
-      "work": "kilometer"
+      "work": "the kilometer"
     }
   },
   "multiply": {
@@ -287,7 +287,7 @@
     },
     "work": {
       "Mwork": "multiply",
-      "work": "numbers"
+      "work": "the numbers"
     }
   },
   "prime": {
@@ -297,8 +297,8 @@
     },
     "work": {
       "Mwork": "check",
-      "work": "number is odd or not",
-      "Rtype": "a boolearn"
+      "work": "the number is odd or not",
+      "Rtype": "a boolearn value"
     }
   },
   "permut": {
@@ -308,13 +308,13 @@
       "data": ["n", "r"]
     },
     "work": {
-      "Mwork": "findout",
+      "Mwork": "find out",
       "work": "the permutation between n and r"
     }
   },
   "polyArea": {
     "title": "polyArea",
-    "des": "<i style=\"font-size:18px; color: red;\">arange the dots at anti-clockwise</i>",
+    "des": "<i style=\"font-size:16px; color: red;\">arange the dots at anti-clockwise</i>",
     "input": {
       "data": ["dots (at least 3 arrays)"],
       "Type": [
@@ -323,7 +323,7 @@
     },
     "work": {
       "Mwork": "calculate",
-      "work": "area between those dots"
+      "work": "the area between those dots"
     }
   },
   "dcm2Deg": {
@@ -333,7 +333,7 @@
     },
     "work": {
       "Mwork": "convert",
-      "work": "decimal into degree"
+      "work": "the decimal into degree"
     }
   },
   "deg2Dcm": {
@@ -343,7 +343,7 @@
     },
     "work": {
       "Mwork": "convert",
-      "work": "degree into decimal"
+      "work": "the degree into decimal"
     }
   },
   "lineWidth": {
@@ -357,7 +357,289 @@
     },
     "work": {
       "Mwork": "measure",
-      "work": "distance of that 2 dots"
+      "work": "the distance of that 2 dots"
+    }
+  },
+  "odd": {
+    "title": "odd",
+    "input": {
+      "data": ["a Natural number"]
+    },
+    "work": {
+      "Mwork": "find out",
+      "work": "the number is odd or not",
+      "Rtype": "a boolearn value"
+    }
+  },
+  "quad": {
+    "title": "quad",
+    "des": "<i style=\"font-size:16px; color: red;\">arange the dots at anti-clockwise</i>",
+    "input": {
+      "data": ["first_point", "second_point", "third_point", "forth_point"],
+      "Type": [
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]"
+      ]
+    },
+    "work": {
+      "Mwork": "calculate and gather",
+      "work": "some information about that quad",
+      "Rtype": "an Object containing that informations about that quad"
+    }
+  },
+  "quadAngles": {
+    "title": "quadAngles",
+    "des": "<i style=\"font-size:16px; color: red;\">arange the dots at anti-clockwise</i>",
+    "input": {
+      "data": ["first_point", "second_point", "third_point", "forth_point"],
+      "Type": [
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]"
+      ]
+    },
+    "work": {
+      "Mwork": "measure",
+      "work": "those angels of that quad",
+      "Rtype": "an Object"
+    }
+  },
+  "quadArea": {
+    "title": "quadArea",
+    "des": "<i style=\"font-size:16px; color: red;\">arange the dots at anti-clockwise</i>",
+    "input": {
+      "data": ["first_point", "second_point", "third_point", "forth_point"],
+      "Type": [
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]"
+      ]
+    },
+    "work": {
+      "Mwork": "measure",
+      "work": "the area of that quad",
+      "Rtype": "an Object"
+    }
+  },
+
+  "quadCorners": {
+    "title": "quadCorners",
+    "des": "<i style=\"font-size:16px; color: red;\">arange the dots at anti-clockwise</i>",
+    "input": {
+      "data": ["first_point", "second_point", "third_point", "forth_point"],
+      "Type": [
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]"
+      ]
+    },
+    "work": {
+      "Mwork": "measure",
+      "work": "those corners of that quad",
+      "Rtype": "an Object"
+    }
+  },
+
+  "quadLines": {
+    "title": "quadLines",
+    "des": "<i style=\"font-size:16px; color: red;\">arange the dots at anti-clockwise</i>",
+    "input": {
+      "data": ["first_point", "second_point", "third_point", "forth_point"],
+      "Type": [
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]"
+      ]
+    },
+    "work": {
+      "Mwork": "measure",
+      "work": "those lines or hands length of that quad",
+      "Rtype": "an Object"
+    }
+  },
+
+  "qudrt": {
+    "title": "qudrt",
+    "des": "ax<sup>2</sup> + bx + c = 0",
+    "input": {
+      "data": ["a", "b", "c"]
+    },
+    "work": {
+      "Mwork": "solve",
+      "work": "that quadratic equation",
+      "Rtype": "an Array contains x1 and x2"
+    }
+  },
+
+  "rad2Deg": {
+    "title": "rad2Deg",
+    "input": {
+      "data": ["radian"],
+      "Type": [
+        "a number or a string contains numerical values an a π, like : <imp>1.645132π</imp> or <imp>3π/2</imp>"
+      ]
+    },
+    "work": {
+      "Mwork": "convert",
+      "work": "the radian value in degree",
+      "Rtype": "an Array contains values at this formate : [degree, minute, second]"
+    }
+  },
+
+  "rand": {
+    "title": "rand",
+    "input": {
+      "data": ["mimimum", "maximum", "type (optional)"],
+      "Type": ["a number", "a number", "as a number less than or equal to 12"]
+    },
+    "work": {
+      "Mwork": "find out",
+      "work": "a random number between minimum and maximum number"
+    }
+  },
+
+  "rootx": {
+    "title": "rootx",
+    "des": "<sup>power</sup>√base",
+    "input": {
+      "data": ["base", "power"]
+    },
+    "work": {
+      "Mwork": "root",
+      "work": "with the custom base and power"
+    }
+  },
+
+  "sec": {
+    "title": "sec",
+    "input": {
+      "data": ["radian"]
+    },
+    "work": {
+      "Mwork": "calculate",
+      "work": "the value of secant"
+    }
+  },
+
+  "sinx": {
+    "title": "sinx",
+    "input": {
+      "data": ["input"],
+      "Type": ["a number as degree or a radian string"]
+    },
+    "work": {
+      "Mwork": "calculate",
+      "work": "the value of sine"
+    }
+  },
+
+  "sums": {
+    "title": "sums",
+    "input": {
+      "data": ["end", "start (default 0)"]
+    },
+    "work": {
+      "Mwork": "calculate",
+      "work": "the summation value to the <b>end</b>'s value"
+    }
+  },
+
+  "tanx": {
+    "title": "tanx",
+    "input": {
+      "data": ["input"],
+      "Type": ["a number as degree or a radian string"]
+    },
+    "work": {
+      "Mwork": "calculate",
+      "work": "the value of tangent"
+    }
+  },
+  "tringle": {
+    "title": "tringle",
+    "des": "<i style=\"font-size:16px; color: red;\">arange the dots at anti-clockwise</i>",
+    "input": {
+      "data": ["first_point", "second_point", "third_point"],
+      "Type": [
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]"
+      ]
+    },
+    "work": {
+      "Mwork": "calculate and gather",
+      "work": "some information about that tringle",
+      "Rtype": "an Object containing that informations about that tringle"
+    }
+  },
+  "tringleAngles": {
+    "title": "tringleAngles",
+    "des": "<i style=\"font-size:16px; color: red;\">arange the dots at anti-clockwise</i>",
+    "input": {
+      "data": ["first_point", "second_point", "third_point"],
+      "Type": [
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]"
+      ]
+    },
+    "work": {
+      "Mwork": "measure",
+      "work": "those angles of that tringle",
+      "Rtype": "an Object"
+    }
+  },
+  "tringleArea": {
+    "title": "tringleArea",
+    "des": "<i style=\"font-size:16px; color: red;\">arange the dots at anti-clockwise</i>",
+    "input": {
+      "data": ["first_point", "second_point", "third_point"],
+      "Type": [
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]"
+      ]
+    },
+    "work": {
+      "Mwork": "measure",
+      "work": "the area of that tringle",
+      "Rtype": "an Object"
+    }
+  },
+  "tringleLines": {
+    "title": "tringleLines",
+    "des": "<i style=\"font-size:16px; color: red;\">arange the dots at anti-clockwise</i>",
+    "input": {
+      "data": ["first_point", "second_point", "third_point"],
+      "Type": [
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]"
+      ]
+    },
+    "work": {
+      "Mwork": "measure",
+      "work": "those lines or hands of that tringle",
+      "Rtype": "an Object"
+    }
+  },
+  "GCD": {
+    "title": "GCD",
+    "input": {
+      "data": ["numbers"],
+      "Type": [
+        "2 or more numbers and every number should have same sign. liike : <imp style=\"background-color : #3A9EFF\">(1,12,5,90)</imp> or <imp style=\"background-color : #3A9EFF\">(-1,-12,-5,-90)</imp>. But not <imp style=\"background-color : #C60001\">(1,-12,-5,90)</imp>"
+      ]
+    },
+    "work": {
+      "Mwork": "findout",
+      "work": "the Greatest common divisor between those numbers"
     }
   }
 }

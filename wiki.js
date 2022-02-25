@@ -7,21 +7,26 @@
 
 //dependensis
 const nightMood = document.getElementById("nightMood");
+const h2OnOffBtn = document.getElementsByClassName("opener");
+const tableContainer = document.querySelectorAll("div.contentTable");
 
 // getting data from json file
+
 fetch("tableData.json")
   .then((res) => res.json())
   .then((data) => {
     let dataArray = Object.keys(data);
     for (let i = 0; i < dataArray.length; i++) {
-      let trs = document.querySelectorAll(".content-table table tr.Tbdy")[i];
+      let trs = document.querySelectorAll(".contentTable section div.Tbdy")[i];
       let dataTitle = trs.dataset.title;
       let des = data[dataTitle].des ? `<br />(${data[dataTitle].des})` : "";
       let inputDataArray = data[dataTitle].input.data;
       var inputString = "";
-      var workString = `${data[dataTitle].work.Mwork[0].toUpperCase()}${data[
+      var workString = `It will <i style="text-decoration : underline;">${data[
         dataTitle
-      ].work.Mwork.substr(1)}`;
+      ].work.Mwork[0].toLowerCase()}${data[dataTitle].work.Mwork.substr(
+        1
+      )}</i>`;
       let Rtype = data[dataTitle].work.Rtype
         ? `<b>${data[dataTitle].work.Rtype}</b>`
         : "a number";
@@ -41,9 +46,15 @@ fetch("tableData.json")
           inputString += `<li>) ${inputDataArray[n]} as ${localDataInputType}</li>`;
         }
       }
-      trs.innerHTML += `<th class="title" style="text-align: center">${data[dataTitle].title}()${des}</th><th class="input"><ol style="list-style-type: decimal">${inputString}</ol></th><th class="works">${workString} the ${data[dataTitle].work.work} and return the result as ${Rtype}</th>`;
+      trs.innerHTML += `<div class="title" style="text-align: center">${data[dataTitle].title}()${des}</div><div class="input"><ol style="list-style-type: decimal">${inputString}</ol></div><div class="works">${workString} ${data[dataTitle].work.work} and then return the result as ${Rtype}</div>`;
     }
   });
+
+/* for (let i = 0; i < 49; i++) {
+  let trs = document.querySelectorAll(".contentTable section div.Tbdy")[i];
+  let dataTitle = trs.dataset.title;
+  console.log(dataTitle);
+} */
 
 // nightMood
 function nightMoodChange() {
@@ -79,3 +90,16 @@ function nightMoodChange() {
   };
 }
 nightMoodChange();
+
+for (let i = 0; i < h2OnOffBtn.length; i++) {
+  //let classList = h2OnOffBtn[i].classList;
+  h2OnOffBtn[i].onclick = () => {
+    if (tableContainer[i].classList.value === "contentTable opend") {
+      tableContainer[i].classList.remove("opend");
+      tableContainer[i].classList.add("closed");
+    } else {
+      tableContainer[i].classList.add("opend");
+      tableContainer[i].classList.remove("closed");
+    }
+  };
+}

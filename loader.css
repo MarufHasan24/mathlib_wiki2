@@ -15,6 +15,13 @@
   transition: 0.3s;
   font-size: 18px;
 }
+*::-webkit-scrollbar {
+  display: none;
+}
+sub,
+sup {
+  font-size: 12px;
+}
 a {
   font-size: 22px;
   text-decoration: 1px double underline;
@@ -32,9 +39,6 @@ p {
 sym {
   font-family: "JetBrainsMono";
 }
-*::-webkit-scrollbar {
-  display: none;
-}
 body,
 div.body {
   width: 100vw;
@@ -44,17 +48,19 @@ div.body {
   overflow: scroll;
 }
 logo {
-  height: 5vh;
-  width: 5vh;
+  height: 8vh;
+  width: 8vh;
   display: flex;
   position: absolute;
   align-items: center;
   justify-content: center;
 }
 logo img {
-  height: 7vh;
-  width: 7vh;
+  height: 7.5vh;
+  width: 7.5vh;
   position: relative;
+  border-radius: 0 1vh;
+  border: inset rgb(218, 165, 32) 0.5vh;
 }
 h1 {
   padding: 2%;
@@ -176,13 +182,15 @@ span.logo {
     transition: 1s;
   }
   logo {
-    height: 7vw;
-    width: 7vw;
+    height: 8vw;
+    width: 8vw;
   }
   logo img {
-    height: 7vw;
-    width: 7vw;
+    height: 7.5vw;
+    width: 7.5vw;
     position: relative;
+    border-radius: 0 1vw;
+    border: inset rgb(218, 165, 32) 0.5vw;
   }
   code {
     border-radius: 2vw;
