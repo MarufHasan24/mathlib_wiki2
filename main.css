@@ -20,7 +20,8 @@ div.author {
   background-color: rgba(34, 34, 34, 0.6);
   background-size: cover;
   background-blend-mode: multiply;
-  background-image: url("./authorBg.jpg");
+  background-image: url("./authorBg720.jpg");
+  background-position: center;
 }
 div.author div.text {
   display: flex;
@@ -124,17 +125,17 @@ div.author div.imageBox section.container div.slider div.image {
   float: left;
 }
 div.author div.imageBox section.container div.slider div.image.img1 {
-  background: url("kpc2021.jpg");
+  background: url("profile2019.jpg");
   background-position: center;
   background-size: cover;
 }
 div.author div.imageBox section.container div.slider div.image.img2 {
-  background: url("authorBg.jpg");
+  background: url("kpc2021.jpg");
   background-position: center;
   background-size: cover;
 }
 div.author div.imageBox section.container div.slider div.image.img3 {
-  background: url("MathlibLogo.jpg");
+  background: url("ProfilemarufSketch.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -164,7 +165,6 @@ div.author div.text div.more a::after {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url("./authorBg720.jpg");
   }
   div.author div.text h2.heading2 span.helloWorld {
     font-size: 15vw;
@@ -229,6 +229,9 @@ div.author div.text div.more a::after {
     width: 22vw;
     margin: 1vw;
     float: left;
+  }
+  div.description ol.list {
+    margin: 0 5vw;
   }
 }
 @keyframes typeing {
@@ -297,11 +300,6 @@ div.description ol.list {
   flex-wrap: wrap;
   margin: 0 5vh;
   list-style-type: disc;
-}
-@media screen and (max-width: 770px) {
-  div.description ol.list {
-    margin: 0 5vw;
-  }
 }
 /* description ends */
 /* installation starts */
@@ -384,54 +382,32 @@ footer.contact[data-species="section"] {
   border-radius: 0;
   background: linear-gradient(19deg, #21d4fdaa 0%, #b721ffaa 100%);
 }
+footer.contact[data-species="section"] div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
 footer.contact[data-species="section"] div ul {
   display: flex;
-  text-align: left;
-  justify-content: left;
+  list-style-type: none;
   flex-direction: column;
   flex-wrap: wrap;
-  list-style: none;
-}
-footer.contact[data-species="section"] div ul li {
-  font-size: 20px;
 }
 footer.contact[data-species="section"] div ul li a {
-  font-size: 20px;
-  text-decoration: none;
+  font: inherit;
   color: inherit;
-  font-weight: 500;
+  text-decoration: none;
+  font-size: 20px;
 }
 footer.contact[data-species="section"] div ul li a:hover {
-  font-size: 22px;
+  text-decoration: underline;
 }
-footer.contact[data-species="section"] div ul li:hover {
-  font-size: 22px;
+footer.contact[data-species="section"] div:nth-child(3) ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
+
 /* contact */
-
-.btn-grad {
-  background-image: linear-gradient(
-    to right,
-    #003973 0%,
-    #e5e5be 51%,
-    #003973 100%
-  );
-}
-.btn-grad {
-  margin: 10px;
-  padding: 15px 45px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
-  display: block;
-}
-
-.btn-grad:hover {
-  background-position: right center; /* change the direction of the change here */
-  color: #fff;
-  text-decoration: none;
-}

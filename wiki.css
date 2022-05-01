@@ -9,6 +9,9 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
   font-size: 18px;
+  --first: #ff1b95;
+  --last: #ffd335;
+  --deg: 10deg;
 }
 div.loader {
   margin: 0;
@@ -21,13 +24,15 @@ p {
 .Day {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(90deg, #3ae1ff 25%, #0e2d92 100%);
+  background: #3ae1ff;
+  /* background: linear-gradient(90deg, #3ae1ff 25%, #0e2d92 100%); */
   color: rgb(29, 29, 29);
   margin: 1%;
   padding: 1%;
 }
 .Night {
-  background: linear-gradient(90deg, #258da0 25%, #071649 100%);
+  background: #258da0;
+  /* background: linear-gradient(90deg, #258da0 25%, #071649 100%); */
   color: rgb(255, 250, 235);
   margin: 1%;
   padding: 1%;
@@ -52,28 +57,6 @@ ol {
   padding: 0.5% 2%;
   margin: 0.5% 2%;
 }
-#nightMood {
-  margin: 1%;
-  padding: 1%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  position: fixed;
-  top: calc(100% - 75px);
-  height: 50px;
-  width: 50px;
-  z-index: 1000;
-  background-color: mediumseagreen;
-  opacity: 50%;
-}
-#nightMood:hover {
-  opacity: 100%;
-}
-#nightMood img {
-  min-width: 100%;
-  min-height: 100%;
-}
 
 /* wiki works */
 div.contentTable {
@@ -86,18 +69,59 @@ div.contentTable {
   flex-direction: column;
   flex-wrap: wrap;
 }
-div.contentTable h2.opener {
-  width: 100%;
+div.contentTable div.btn {
+  width: 98vw;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+div.contentTable div.main {
+  width: 98vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+/* button works */
+div.contentTable.opened div.btn h2.opener,
+div.contentTable.closed div.btn h2.closer {
+  width: 78vw;
+  margin: 1vw;
   padding: 1%;
   text-transform: capitalize;
-  font-size: 28px;
+  font-size: 24px;
   margin: 0;
-  background: #c9c9c9;
+  background: linear-gradient(
+    68.4deg,
+    rgba(99, 251, 215, 1),
+    rgb(13, 192, 216)
+  );
   border-radius: 1vh;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
-div.contentTable h2.opener::before {
+div.contentTable.closed div.btn h2.opener,
+div.contentTable.opened div.btn h2.closer {
+  width: 18vw;
+  margin: 1vw;
+  padding: 1%;
+  text-transform: capitalize;
+  font-size: 24px;
+  margin: 0;
+  background: linear-gradient(
+    68.4deg,
+    rgba(99, 251, 215, 1),
+    rgba(13, 192, 216)
+  );
+  border-radius: 1vh;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+div.contentTable div.btn h2.opener::before {
   content: "";
   position: absolute;
   background: #333;
@@ -108,7 +132,7 @@ div.contentTable h2.opener::before {
   border-radius: 5px;
   transition: 1s;
 }
-div.contentTable h2.opener::after {
+div.contentTable div.btn h2.opener::after {
   content: "";
   position: absolute;
   background: #333;
@@ -119,35 +143,68 @@ div.contentTable h2.opener::after {
   border-radius: 5px;
   transition: 1s;
 }
-div.contentTable.opend h2.opener::before {
+div.contentTable.opened div.btn h2.opener::before {
   transform: rotateZ(270deg);
 }
-div.contentTable.closed h2.opener::after {
+div.contentTable.closed div.btn h2.opener::after {
   transform: rotateZ(180deg);
 }
-div.contentTable section.main {
+div.contentTable div.btn h2.closer::before {
+  content: "";
+  position: absolute;
+  background: #333;
+  transform: rotateZ(90deg);
+  right: 5%;
+  height: 25px;
+  width: 5px;
+  border-radius: 5px;
+  transition: 1s;
+}
+div.contentTable div.btn h2.closer::after {
+  content: "";
+  position: absolute;
+  background: #333;
+  transform: rotateZ(90deg);
+  right: 5%;
+  height: 25px;
+  width: 5px;
+  border-radius: 5px;
+  transition: 1s;
+}
+div.contentTable.closed div.btn h2.closer::before {
+  transform: rotateZ(270deg);
+}
+div.contentTable.opened div.btn h2.closer::after {
+  transform: rotateZ(180deg);
+}
+
+/* table works */
+div.contentTable div.main section.functions,
+div.contentTable div.main section.constants {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 98vw;
+  width: 97vw;
   margin: 1vw;
   transition: 1s;
 }
-div.contentTable section.main div.tbody {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-div.contentTable section.main div.thead {
+div.contentTable div.main section.functions div.thead,
+div.contentTable div.main section.constants div.thead {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
-div.contentTable section.main div.thead div[data-title="title"] {
+div.contentTable div.main section.functions div.tbody,
+div.contentTable div.main section.constants div.tbody {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+div.contentTable div.main section.functions div.thead div[data-title="title"] {
   width: 100%;
   display: grid;
   grid-template-columns: 5fr 10fr 9fr;
@@ -155,31 +212,241 @@ div.contentTable section.main div.thead div[data-title="title"] {
   align-items: center;
   text-align: left;
   justify-content: left;
-  border: 3.5px groove #ffd000;
 }
-div.contentTable section.main div.tbody div.Tbdy {
+div.contentTable div.main section.constants div.thead div[data-title="title"] {
+  width: 98vw;
   display: grid;
-  grid-template-columns: minmax(150px, 5fr) minmax(250px, 10fr) minmax(
-      250px,
-      9fr
-    );
+  grid-template-columns: 2fr 4fr 2fr 4fr;
+  grid-template-rows: 10vh;
+  align-items: center;
+  text-align: left;
+  justify-content: left;
+}
+div.contentTable div.main section.functions div.tbody div.Tbdy {
+  display: grid;
+  grid-template-columns: 5fr 10fr 9fr;
   align-items: center;
   justify-content: center;
-  margin: 1px 0;
-  background: rgba(235, 235, 235, 0.5);
-  column-gap: 0.1fr;
+  margin: 0.25vh 0;
+  column-gap: 0;
   min-width: 450px;
 }
-div.contentTable section.main div.tbody div.title,
-div.contentTable section.main div.tbody div.input,
-div.contentTable section.main div.tbody div.works {
-  display: initial;
+div.contentTable div.main section.constants div.tbody div.Tbdy {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
+  grid-template-rows: 10vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0.25vh 0;
+  column-gap: 0;
+  min-width: 450px;
 }
-div.contentTable.opend section.main {
-  display: block;
+div.contentTable div.main section.functions div.tbody div.Tbdy div.title,
+div.contentTable div.main section.functions div.tbody div.Tbdy div.input,
+div.contentTable div.main section.functions div.tbody div.Tbdy div.works {
+  display: flex;
+  margin: 0;
+  border: 0.1vh groove #3ae1ff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(235, 235, 235, 0.5);
   height: 100%;
 }
-div.contentTable.closed section.main {
-  display: block;
-  height: 0%;
+div.contentTable div.main section.functions div.tbody div.Tbdy div.input {
+  justify-content: left;
+  text-align: left;
+  padding: 1vh 1vw;
+}
+div.contentTable div.main section.constants div.tbody div.Tbdy div.title,
+div.contentTable div.main section.constants div.tbody div.Tbdy div.name,
+div.contentTable div.main section.constants div.tbody div.Tbdy div.value,
+div.contentTable div.main section.constants div.tbody div.Tbdy div.symbol {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  border: 0.1vh groove #3ae1ff;
+  background: rgba(235, 235, 235, 0.5);
+}
+div.contentTable
+  div.main
+  section.functions
+  div.thead
+  div[data-title="title"]
+  div.title,
+div.contentTable
+  div.main
+  section.functions
+  div.thead
+  div[data-title="title"]
+  div.input,
+div.contentTable
+  div.main
+  section.functions
+  div.thead
+  div[data-title="title"]
+  div.works {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 0.1vh groove #2fb7cf;
+  height: 100%;
+  background: rgba(0, 238, 255, 0.5);
+}
+div.contentTable.opened div.main section.functions,
+div.contentTable.closed div.main section.constants {
+  width: 97vw;
+  margin: 1vw;
+  display: flex;
+  padding: 0;
+  opacity: 1;
+}
+div.contentTable.closed div.main section.functions,
+div.contentTable.opened div.main section.constants {
+  width: 0vw;
+  padding: 0;
+  display: none;
+  margin: 0;
+  opacity: 0;
+}
+div.contentTable
+  div.main
+  section.constants
+  div.thead
+  div[data-title="title"]
+  div.title,
+div.contentTable
+  div.main
+  section.constants
+  div.thead
+  div[data-title="title"]
+  div.name,
+div.contentTable
+  div.main
+  section.constants
+  div.thead
+  div[data-title="title"]
+  div.value,
+div.contentTable
+  div.main
+  section.constants
+  div.thead
+  div[data-title="title"]
+  div.symbol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 0.1vh groove #2fb7cf;
+  height: 100%;
+  background: rgba(0, 238, 255, 0.5);
+}
+
+/* contacts work */
+footer.contact[data-species="section"] {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  background: linear-gradient(90deg, #ff734d, #934bff);
+}
+footer.contact[data-species="section"] div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+footer.contact[data-species="section"] div ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+footer.contact[data-species="section"] div ul li a {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+  font-size: 20px;
+}
+footer.contact[data-species="section"] div ul li a:hover {
+  text-decoration: underline;
+}
+footer.contact[data-species="section"] div:nth-child(3) ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+/* small screen works */
+@media screen and (max-width: 770px) {
+  div.contentTable div.main section.functions div.tbody div.Tbdy,
+  div.contentTable
+    div.main
+    section.functions
+    div.thead
+    div[data-title="title"] {
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  div.contentTable div.main section.constants div.tbody div.Tbdy div.value,
+  div.contentTable div.main section.constants div.tbody div.Tbdy div.title,
+  div.contentTable div.main section.functions div.tbody div.Tbdy div.works {
+    background: rgba(160, 255, 250, 0.5);
+  }
+  div.contentTable div.main section.functions div.tbody div.works,
+  div.contentTable
+    div.main
+    section.functions
+    div.thead
+    div[data-title="title"]
+    div.works {
+    grid-column: 1/-1;
+  }
+  div.contentTable div.main section.constants div.tbody div.Tbdy,
+  div.contentTable
+    div.main
+    section.constants
+    div.thead
+    div[data-title="title"] {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0.25vw 0;
+  }
+  div.contentTable div.btn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  div.contentTable.opened div.btn h2.opener,
+  div.contentTable.closed div.btn h2.closer {
+    margin: 0.5vh 0;
+    width: 95vw;
+  }
+  div.contentTable.closed div.btn h2.opener,
+  div.contentTable.opened div.btn h2.closer {
+    margin: 0.5vh 0;
+    width: 59vw;
+  }
+  footer.contact[data-species="section"] div:nth-child(3) {
+    grid-column: 1/-1;
+  }
+  footer.contact[data-species="section"] div:nth-child(2) {
+    grid-column: 2/-1;
+  }
+  footer.contact[data-species="section"] div:nth-child(1) {
+    grid-column: 1/2;
+    width: 100%;
+  }
+  footer.contact[data-species="section"] div:nth-child(3) ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }

@@ -1,0 +1,750 @@
+{
+  "age": {
+    "title": "age",
+    "input": {
+      "data": ["year", "month", "date", "customDate (optional)"],
+      "Type": [
+        "Number",
+        "Number",
+        "Number",
+        "an array contains [year,month,date]"
+      ]
+    },
+    "work": {
+      "Mwork": "calculate",
+      "work": "the gap between 2 dates (defult : current day to another day)"
+    }
+  },
+  "average": {
+    "title": "average",
+    "input": {
+      "data": ["2 or more"]
+    },
+    "work": {
+      "Rtype": "an Array",
+      "Mwork": "calculate",
+      "work": "the average"
+    }
+  },
+  "c2Fr": {
+    "title": "c2Fr",
+    "input": {
+      "data": ["number"]
+    },
+    "work": {
+      "Mwork": "Convert",
+      "work": "the celcius into fahrenheit"
+    }
+  },
+  "caller": {
+    "title": "caller",
+    "input": {
+      "data": ["numbers and unit together"],
+      "Type": ["a string"]
+    },
+    "work": {
+      "Mwork": "Call",
+      "work": "the right converter then convert"
+    }
+  },
+  "combo": {
+    "title": "combo",
+    "des": "<sup>n</sup>C<sub>r</sub>",
+    "input": {
+      "data": ["n", "r"]
+    },
+    "work": {
+      "Mwork": "find out",
+      "work": "the combination of"
+    }
+  },
+  "cm2In": {
+    "title": "cm2In",
+    "input": {
+      "data": ["centimeter"]
+    },
+    "work": {
+      "Mwork": "Convert",
+      "work": "the centimeter into inch"
+    }
+  },
+  "cosx": {
+    "title": "cosx",
+    "input": {
+      "data": ["input"],
+      "Type": ["a radian (type string) or degree (type number)"]
+    },
+    "work": {
+      "Mwork": "find out",
+      "work": "the cos value of radian or degree"
+    }
+  },
+  "cosec": {
+    "title": "cosec",
+    "input": {
+      "data": ["radian"]
+    },
+    "work": {
+      "Mwork": "find out",
+      "work": "the cosec value of radian"
+    }
+  },
+  "cot": {
+    "title": "cot",
+    "input": {
+      "data": ["radian"]
+    },
+    "work": {
+      "Mwork": "find out",
+      "work": "the cot value of radian"
+    }
+  },
+  "deMemo": {
+    "title": "deMemo",
+    "input": {
+      "data": [
+        "name (name of memory)",
+        "asyncronise",
+        "if it is asyncronise then callback"
+      ],
+      "Type": ["a string", "a boolearn", "a function"]
+    },
+    "work": {
+      "Mwork": "Bring",
+      "work": "the memorised data from file system",
+      "Rtype": "an Object contains expected data, date and time of saved data"
+    }
+  },
+  "delMemo": {
+    "title": "delMemo",
+    "input": {
+      "data": [
+        "name of memory or 'ALL'",
+        "asyncronise",
+        "if it is asyncronise then callback"
+      ],
+      "Type": ["a string", "a boolearn", "a function"]
+    },
+    "work": {
+      "Mwork": "delete",
+      "work": "the memorised data from file system",
+      "Rtype": "<i>a confarmetion string</i>"
+    }
+  },
+  "deg2Rad": {
+    "title": "deg2Rad",
+    "input": {
+      "data": ["dgree"]
+    },
+    "work": {
+      "Mwork": "Convert",
+      "work": "the dgree into radian",
+      "Rtype": "an Object"
+    }
+  },
+  "fact": {
+    "title": "fact",
+    "input": {
+      "data": ["number"],
+      "Type": ["a natural number or 0 (like: 0,1,2,45,...)"]
+    },
+    "work": {
+      "Mwork": "calculate",
+      "work": "the factorial like (9! = 1*2*3*4*5*6*7*8*9 = 362880) "
+    }
+  },
+  "fr2C": {
+    "title": "fr2C",
+    "input": {
+      "data": ["fahrenheit"]
+    },
+    "work": {
+      "Mwork": "Convert",
+      "work": "the fahrenheit into celcius"
+    }
+  },
+  "ft2M": {
+    "title": "ft2M",
+    "input": {
+      "data": ["feet"]
+    },
+    "work": {
+      "Mwork": "Convert",
+      "work": "the feet into meter"
+    }
+  },
+  "fract": {
+    "title": "fract",
+    "input": {
+      "data": ["input"],
+      "Type": ["a float type number"]
+    },
+    "work": {
+      "Mwork": "convert",
+      "work": "the decimal number into fractional number",
+      "Rtype": "a string"
+    }
+  },
+  "in2Cm": {
+    "title": "in2Cm",
+    "input": {
+      "data": ["inch"]
+    },
+    "work": {
+      "Mwork": "Convert",
+      "work": "the inch to centimeter"
+    }
+  },
+  "km2Mile": {
+    "title": "km2Mile",
+    "input": {
+      "data": ["kilometer"]
+    },
+    "work": {
+      "Mwork": "Convert",
+      "work": "the inch to centimeter"
+    }
+  },
+  "leapYear": {
+    "title": "leapYear",
+    "input": {
+      "data": ["year"]
+    },
+    "work": {
+      "Mwork": "calculate",
+      "work": "the year is leapYear or not",
+      "Rtype": "a boolearn value"
+    }
+  },
+  "linearEq": {
+    "title": "linearEq",
+    "des": "ax + by = c",
+    "input": {
+      "data": ["first_Equation", "second_Equation"],
+      "Type": ["an array", "an array"]
+    },
+    "work": {
+      "Mwork": "solve",
+      "work": "the equations",
+      "Rtype": "an Array"
+    }
+  },
+  "logx": {
+    "title": "logx",
+    "des": "log <sub>base</sub> angle",
+    "input": {
+      "data": ["base", "angle"],
+      "Type": [
+        "a number which is greater than 0 and not 1",
+        "a number which is greater than 0"
+      ]
+    },
+    "work": {
+      "Mwork": "calculate",
+      "work": "the logarithom of custom base and angle"
+    }
+  },
+  "memo": {
+    "title": "memo",
+    "input": {
+      "data": [
+        "number",
+        "name (name of memory)",
+        "asyncronise",
+        "if it is asyncronise then a callback"
+      ],
+      "Type": ["a number or an array", "a string", "a boolearn", "a function"]
+    },
+    "work": {
+      "Mwork": "memorise",
+      "work": "the a number or an array"
+    }
+  },
+  "m2Ft": {
+    "title": "m2Ft",
+    "input": {
+      "data": ["meter"]
+    },
+    "work": {
+      "Mwork": "convert",
+      "work": "the feet"
+    }
+  },
+  "mile2Km": {
+    "title": "mile2Km",
+    "input": {
+      "data": ["mile"]
+    },
+    "work": {
+      "Mwork": "convert",
+      "work": "the kilometer"
+    }
+  },
+  "multiply": {
+    "title": "multiply",
+    "input": {
+      "data": ["2 or more numbers"]
+    },
+    "work": {
+      "Mwork": "multiply",
+      "work": "the numbers"
+    }
+  },
+  "prime": {
+    "title": "prime",
+    "input": {
+      "data": ["a Natural number"]
+    },
+    "work": {
+      "Mwork": "check",
+      "work": "the number is odd or not",
+      "Rtype": "a boolearn value"
+    }
+  },
+  "permut": {
+    "title": "permut",
+    "des": "<sup>n</sup>P<sub>r</sub>",
+    "input": {
+      "data": ["n", "r"]
+    },
+    "work": {
+      "Mwork": "find out",
+      "work": "the permutation between n and r"
+    }
+  },
+  "polyArea": {
+    "title": "polyArea",
+    "des": "<i style=\"font-size:16px; color: red;\">arange the dots at anti-clockwise</i>",
+    "input": {
+      "data": ["dots (at least 3 arrays)"],
+      "Type": [
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]"
+      ]
+    },
+    "work": {
+      "Mwork": "calculate",
+      "work": "the area between those dots"
+    }
+  },
+  "dcm2Deg": {
+    "title": "dcm2Deg",
+    "input": {
+      "data": ["decimal"]
+    },
+    "work": {
+      "Mwork": "convert",
+      "work": "the decimal into degree"
+    }
+  },
+  "deg2Dcm": {
+    "title": "deg2Dcm",
+    "input": {
+      "data": ["degree"]
+    },
+    "work": {
+      "Mwork": "convert",
+      "work": "the degree into decimal"
+    }
+  },
+  "lineWidth": {
+    "title": "lineWidth",
+    "input": {
+      "data": ["first_point", "second_point"],
+      "Type": [
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]"
+      ]
+    },
+    "work": {
+      "Mwork": "measure",
+      "work": "the distance of that 2 dots"
+    }
+  },
+  "odd": {
+    "title": "odd",
+    "input": {
+      "data": ["a Natural number"]
+    },
+    "work": {
+      "Mwork": "find out",
+      "work": "the number is odd or not",
+      "Rtype": "a boolearn value"
+    }
+  },
+  "quad": {
+    "title": "quad",
+    "des": "<i style=\"font-size:16px; color: red;\">arange the dots at anti-clockwise</i>",
+    "input": {
+      "data": ["first_point", "second_point", "third_point", "forth_point"],
+      "Type": [
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]"
+      ]
+    },
+    "work": {
+      "Mwork": "calculate and gather",
+      "work": "some information about that quad",
+      "Rtype": "an Object containing that informations about that quad"
+    }
+  },
+  "quadAngles": {
+    "title": "quadAngles",
+    "des": "<i style=\"font-size:16px; color: red;\">arange the dots at anti-clockwise</i>",
+    "input": {
+      "data": ["first_point", "second_point", "third_point", "forth_point"],
+      "Type": [
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]"
+      ]
+    },
+    "work": {
+      "Mwork": "measure",
+      "work": "those angels of that quad",
+      "Rtype": "an Object"
+    }
+  },
+  "quadArea": {
+    "title": "quadArea",
+    "des": "<i style=\"font-size:16px; color: red;\">arange the dots at anti-clockwise</i>",
+    "input": {
+      "data": ["first_point", "second_point", "third_point", "forth_point"],
+      "Type": [
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]"
+      ]
+    },
+    "work": {
+      "Mwork": "measure",
+      "work": "the area of that quad",
+      "Rtype": "an Object"
+    }
+  },
+
+  "quadCorners": {
+    "title": "quadCorners",
+    "des": "<i style=\"font-size:16px; color: red;\">arange the dots at anti-clockwise</i>",
+    "input": {
+      "data": ["first_point", "second_point", "third_point", "forth_point"],
+      "Type": [
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]"
+      ]
+    },
+    "work": {
+      "Mwork": "measure",
+      "work": "those corners of that quad",
+      "Rtype": "an Object"
+    }
+  },
+
+  "quadLines": {
+    "title": "quadLines",
+    "des": "<i style=\"font-size:16px; color: red;\">arange the dots at anti-clockwise</i>",
+    "input": {
+      "data": ["first_point", "second_point", "third_point", "forth_point"],
+      "Type": [
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]"
+      ]
+    },
+    "work": {
+      "Mwork": "measure",
+      "work": "those lines or hands length of that quad",
+      "Rtype": "an Object"
+    }
+  },
+
+  "qudrt": {
+    "title": "qudrt",
+    "des": "ax<sup>2</sup> + bx + c = 0",
+    "input": {
+      "data": ["a", "b", "c"]
+    },
+    "work": {
+      "Mwork": "solve",
+      "work": "that quadratic equation",
+      "Rtype": "an Array contains x1 and x2"
+    }
+  },
+
+  "rad2Deg": {
+    "title": "rad2Deg",
+    "input": {
+      "data": ["radian"],
+      "Type": [
+        "a number or a string contains numerical values an a π, like : <imp>1.645132π</imp> or <imp>3π/2</imp>"
+      ]
+    },
+    "work": {
+      "Mwork": "convert",
+      "work": "the radian value in degree",
+      "Rtype": "an Array contains values at this formate : [degree, minute, second]"
+    }
+  },
+
+  "rand": {
+    "title": "rand",
+    "input": {
+      "data": ["mimimum", "maximum", "type (optional)"],
+      "Type": ["a number", "a number", "as a number less than or equal to 12"]
+    },
+    "work": {
+      "Mwork": "find out",
+      "work": "a random number between minimum and maximum number"
+    }
+  },
+
+  "rootx": {
+    "title": "rootx",
+    "des": "<sup>power</sup>√base",
+    "input": {
+      "data": ["base", "power"]
+    },
+    "work": {
+      "Mwork": "root",
+      "work": "with the custom base and power"
+    }
+  },
+
+  "sec": {
+    "title": "sec",
+    "input": {
+      "data": ["radian"]
+    },
+    "work": {
+      "Mwork": "calculate",
+      "work": "the value of secant"
+    }
+  },
+
+  "sinx": {
+    "title": "sinx",
+    "input": {
+      "data": ["input"],
+      "Type": ["a number as degree or a radian string"]
+    },
+    "work": {
+      "Mwork": "calculate",
+      "work": "the value of sine"
+    }
+  },
+
+  "sums": {
+    "title": "sums",
+    "input": {
+      "data": ["end", "start (default 0)"]
+    },
+    "work": {
+      "Mwork": "calculate",
+      "work": "the sum of integer numbers from <b>start</b> value to the <b>end</b> value"
+    }
+  },
+  "sum": {
+    "title": "sum",
+    "input": {
+      "data": ["2 or more numbers (could be random numbers)"]
+    },
+    "work": {
+      "Mwork": "sum",
+      "work": "the numbers"
+    }
+  },
+  "tanx": {
+    "title": "tanx",
+    "input": {
+      "data": ["input"],
+      "Type": ["a number as degree or a radian string"]
+    },
+    "work": {
+      "Mwork": "calculate",
+      "work": "the value of tangent"
+    }
+  },
+  "tringle": {
+    "title": "tringle",
+    "des": "<i style=\"font-size:16px; color: red;\">arange the dots at anti-clockwise</i>",
+    "input": {
+      "data": ["first_point", "second_point", "third_point"],
+      "Type": [
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]"
+      ]
+    },
+    "work": {
+      "Mwork": "calculate and gather",
+      "work": "some information about that tringle",
+      "Rtype": "an Object containing that informations about that tringle"
+    }
+  },
+  "tringleAngles": {
+    "title": "tringleAngles",
+    "des": "<i style=\"font-size:16px; color: red;\">arange the dots at anti-clockwise</i>",
+    "input": {
+      "data": ["first_point", "second_point", "third_point"],
+      "Type": [
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]"
+      ]
+    },
+    "work": {
+      "Mwork": "measure",
+      "work": "those angles of that tringle",
+      "Rtype": "an Object"
+    }
+  },
+  "tringleArea": {
+    "title": "tringleArea",
+    "des": "<i style=\"font-size:16px; color: red;\">arange the dots at anti-clockwise</i>",
+    "input": {
+      "data": ["first_point", "second_point", "third_point"],
+      "Type": [
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]"
+      ]
+    },
+    "work": {
+      "Mwork": "measure",
+      "work": "the area of that tringle",
+      "Rtype": "an Object"
+    }
+  },
+  "tringleLines": {
+    "title": "tringleLines",
+    "des": "<i style=\"font-size:16px; color: red;\">arange the dots at anti-clockwise</i>",
+    "input": {
+      "data": ["first_point", "second_point", "third_point"],
+      "Type": [
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]"
+      ]
+    },
+    "work": {
+      "Mwork": "measure",
+      "work": "those lines or hands of that tringle",
+      "Rtype": "an Object"
+    }
+  },
+  "tringleMed": {
+    "title": "tringleMed",
+    "des": "<i style=\"font-size:16px; color: red;\">arange the dots at anti-clockwise</i>",
+    "input": {
+      "data": ["first_point", "second_point", "third_point"],
+      "Type": [
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]",
+        "an array contains the value of x coordinate and y coordinate. like : [x,y]"
+      ]
+    },
+    "work": {
+      "Mwork": "measure",
+      "work": "medians of that tringle",
+      "Rtype": "an Object"
+    }
+  },
+  "GCD": {
+    "title": "GCD",
+    "input": {
+      "data": ["numbers"],
+      "Type": [
+        "2 or more numbers and every number should have same sign. liike : <imp style=\"background-color : #3A9EFF\">(1,12,5,90)</imp> or <imp style=\"background-color : #3A9EFF\">(-1,-12,-5,-90)</imp>. But not <imp style=\"background-color : #C60001\">(1,-12,-5,90)</imp>"
+      ]
+    },
+    "work": {
+      "Mwork": "findout",
+      "work": "the Greatest common divisor between those numbers"
+    }
+  },
+  "LCM": {
+    "title": "LCM",
+    "input": {
+      "data": ["numbers"],
+      "Type": [
+        "2 or more numbers and every number should have same sign. liike : <imp style=\"background-color : #3A9EFF\">(1,12,5,90)</imp> or <imp style=\"background-color : #3A9EFF\">(-1,-12,-5,-90)</imp>. But not <imp style=\"background-color : #C60001\">(1,-12,-5,90)</imp>"
+      ]
+    },
+    "work": {
+      "Mwork": "findout",
+      "work": "the Least common multiple between those numbers"
+    }
+  },
+  "read": {
+    "title": "read",
+    "des": "<i style=\"font-size:16px; color: red;\"><b>Caution:</b> After 30 days, record will be moved into the trush folder automatically, and after 30 days it will be deleted parmanently from trush.</i>",
+    "input": {
+      "data": ["date", "month", "year"],
+      "Type": ["string or date", "month", "year"]
+    },
+    "work": {
+      "Mwork": "return",
+      "work": "the record of calculatoion of that date."
+    }
+  },
+  "restore": {
+    "title": "restore",
+    "des": "<i style=\"font-size:16px; color: green;\">But you can restore your important files. And it will stay in your device until you are not deleting it manually.</i>",
+    "input": {
+      "data": ["date", "month", "year"],
+      "Type": ["string or date", "month", "year"]
+    },
+    "work": {
+      "Mwork": "restore",
+      "work": "the file(s) from trush."
+    }
+  },
+  "intersect": {
+    "title": "intersect",
+    "input": {
+      "data": ["set1", "set2"],
+      "Type": [
+        "array or set containing same sined numbers",
+        "array or set containing same sined numbers"
+      ]
+    },
+    "work": {
+      "Mwork": "findout",
+      "work": "the intersection between those 2 set",
+      "Rtype": ["an array"]
+    }
+  },
+  "union": {
+    "title": "union",
+    "input": {
+      "data": ["set1", "set2"],
+      "Type": [
+        "array or set containing same sined numbers",
+        "array or set containing same sined numbers"
+      ]
+    },
+    "work": {
+      "Mwork": "findout",
+      "work": "the union between those 2 set",
+      "Rtype": ["an array"]
+    }
+  },
+  "delRecord": {
+    "title": "delRecord",
+    "input": {
+      "data": ["date", "month", "year"],
+      "Type": ["string or date", "month", "year"]
+    },
+    "work": {
+      "Mwork": "delete",
+      "work": "records you want to delete",
+      "Rtype": ["<i>a confarmetion string</i>"]
+    }
+  }
+}

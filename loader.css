@@ -9,26 +9,43 @@
   position: relative;
   font-family: "balo";
   word-spacing: 2px;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
   scrollbar-width: 0;
   transition: 0.3s;
   font-size: 18px;
+  --first: #1bacff;
+  --last: #24887c;
+  --deg: 160deg;
 }
 *::-webkit-scrollbar {
   display: none;
 }
+div.body::-webkit-scrollbar {
+  display: inline;
+  width: 15px;
+  background-color: #555a;
+}
+div.body::-webkit-scrollbar-thumb {
+  background-color: #3bd1ff;
+  background-image: linear-gradient(
+    var(--deg),
+    var(--first) 0%,
+    var(--last) 100%
+  );
+  /* background: linear-gradient(rgba(0, 238, 255) 50%, rgba(0, 255, 106) 80%); */
+  background-size: cover;
+}
+
 sub,
 sup {
   font-size: 12px;
 }
 a {
   font-size: 22px;
-  text-decoration: 1px double underline;
   font-weight: 600;
+  text-decoration: none;
 }
 a:hover {
-  font-size: 25px;
+  text-decoration: underline;
 }
 p {
   text-align: justify;
@@ -45,7 +62,8 @@ div.body {
   height: 100vh;
   padding: 0;
   margin: 0;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 logo {
   height: 8vh;
@@ -86,6 +104,7 @@ h1 a:hover {
   text-shadow: rgba(29, 29, 29, 0.5) 2px 2px 10px;
   -webkit-text-stroke: 0 #333;
   transition: 1s;
+  text-decoration: none;
 }
 h2.heading2 {
   text-transform: capitalize;
@@ -202,6 +221,9 @@ span.logo {
       0.5vw -0.5vw 5px rgba(0, 255, 255, 0.5),
       -0.5vw -0.5vw 5px rgba(0, 255, 255, 0.5);
   }
+  div.body::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /* common area ends */
@@ -308,6 +330,10 @@ span.logo {
   font-family: "icon";
   src: url("./fonts/Icons-color2.ttf");
 }
+@font-face {
+  font-family: Noto;
+  src: url("./fonts/NotoSerif-Regular.ttf");
+}
 /* nightmood */
 #nightMood {
   margin: 1%;
@@ -317,20 +343,131 @@ span.logo {
   align-items: center;
   overflow: hidden;
   position: fixed;
-  top: calc(100% - 75px);
+  border-radius: 50%;
+  top: calc(100% - 100px);
   height: 50px;
   width: 50px;
   z-index: 1000;
-  background-position: left;
-  background: linear-gradient(90deg, #02aab0 0%, #00cdac 51%, #02aab0 100%);
-  opacity: 60%;
+  background-color: mediumseagreen;
+  opacity: 50%;
 }
 #nightMood:hover {
   opacity: 100%;
-  background-position: right;
-  background: linear-gradient(45deg, #02aab0 0%, #00cdac 51%, #02aab0 100%);
 }
 #nightMood img {
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+div.scrollUpBtn {
+  text-decoration: none;
+  transition: 0.5s;
+  cursor: pointer;
+  position: fixed;
+  right: 40px;
+  bottom: 20px;
+  font-size: 25px;
+  z-index: 10;
+  padding: 2vh 2.7vh;
+  background: #144a63;
+  color: #ffffff;
+  border-radius: 1vh;
+}
+
+/* page map */
+div.pageMap {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96%;
+  margin: 0 1% 0 3%;
+}
+div.pageMap ul {
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+  background: #222;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: calc(95% - (15px + 8vh));
+}
+div.pageMap ul li {
+  display: flex;
+  justify-content: center;
+}
+div.pageMap ul li a {
+  text-decoration: none;
+  font-size: inherit;
+  color: #eee;
+  background-color: none;
+  padding: 0 5%;
+  text-align: center;
+}
+div.pageMap ul li a:hover {
+  background-color: #3fa1af;
+}
+div.pageMap ul li:nth-last-child(1) {
+  display: list-item;
+}
+div.pageMap ul li:nth-last-child(1) ul.dropdown {
+  display: none;
+  overflow: hidden;
+  float: right;
+  left: 63%;
+  position: fixed;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #222;
+  height: auto;
+  width: 30%;
+  flex-direction: column;
+  background-color: rgba(0, 80, 130, 0.8);
+}
+div.pageMap ul li:nth-last-child(1):hover ul.dropdown {
+  display: flex;
+}
+div.pageMap ul li:nth-last-child(1) ul.dropdown li {
+  width: 100%;
+}
+div.pageMap ul li:nth-last-child(1) ul.dropdown li.own a {
+  cursor: no-drop;
+  background-color: #002c62;
+  color: #fff;
+}
+div.pageMap ul li:nth-last-child(1) ul.dropdown li.own:hover a {
+  background-color: #002c62;
+  color: #fff;
+}
+div.pageMap ul li:nth-last-child(1) ul.dropdown li:hover {
+  background-color: #3fa1af;
+  color: #222;
+}
+div.pageMap ul li:nth-last-child(1) ul.dropdown li a {
+  padding: 15px 0%;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+div.pageMap ul li a#menuBtn {
+  cursor: pointer;
+}
+div.pageMap ul li a#menuBtn.permanent {
+  color: #222;
+  background-color: #ccce;
+}
+div.pageMap ul li a#menuBtn.hover {
+  color: #eee;
+  background-color: none;
+}
+@media screen and (max-width: 770px) {
+  div.pageMap ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+  }
 }

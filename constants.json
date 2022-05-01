@@ -1,0 +1,140 @@
+{
+  "B3": {
+    "name": "Baker constant",
+    "title": "B3",
+    "symbol": "ß<sub>3</sub>",
+    "value": 0.8356488482647211
+  },
+  "Ce": {
+    "name": "Charge of electron",
+    "title": "Ce",
+    "symbol": "e<sup style=\"font-size: 18px;\">-</sup>",
+    "value": -1.602176e-19
+  },
+  "Cp": {
+    "name": "Charge of proton",
+    "title": "Cp",
+    "symbol": "H<sup>+</sup>",
+    "value": 1.602176e-19
+  },
+  "c": {
+    "name": "Speed of light",
+    "title": "c",
+    "symbol": "c<sub>0</sub>",
+    "value": 299792458
+  },
+  "F": {
+    "name": "faraday",
+    "title": "F",
+    "symbol": "F",
+    "value": 96485.33
+  },
+  "G": {
+    "name": "Gravitational constant",
+    "title": "G",
+    "symbol": "G",
+    "value": 6.67428e-11
+  },
+  "G0": {
+    "name": "Conductance quantum",
+    "title": "G0",
+    "symbol": "G<sub>0</sub>",
+    "value": 0.000077480917
+  },
+  "G1": {
+    "name": "G1 (function of x=(Lμ)-1)",
+    "title": "G1",
+    "symbol": "G<sub>1</sub>",
+    "value": 0.8346268416740732
+  },
+  "K": {
+    "name": "Boltzmann constant",
+    "title": "K",
+    "symbol": "k<sub>B</sub> <font style=\"font-family: balo; font-style: normal;font-weight : 600;\">or</font> k",
+    "value": 1.380649e-23
+  },
+  "Me": {
+    "name": "Mass of electron",
+    "title": "Me",
+    "symbol": "m<sub>e</sub>",
+    "value": 9.1093837015e-31
+  },
+  "Mn": {
+    "name": "Mass of nutron",
+    "title": "Mn",
+    "symbol": "m<sub>n</sub>",
+    "value": 1.67492749804e-27
+  },
+  "Mp": {
+    "name": "Mass of proton",
+    "title": "Mp",
+    "symbol": "m<sub>p</sub> <font style=\"font-family: balo; font-style: normal;font-weight : 600;\">or</font> m<sub><span>H<sup style=\"font-size: 12px;\">+</sup></span></sub>",
+    "value": 1.67262192369e-27
+  },
+  "Na": {
+    "name": "Avogadro number",
+    "title": "Na",
+    "symbol": "N<sub>A</sub>",
+    "value": 6.02214086e23
+  },
+  "Phi": {
+    "name": "Golden ratio",
+    "title": "Phi",
+    "symbol": "φ",
+    "value": 1.618033988749895
+  },
+  "Ri": {
+    "name": "Rydberg's constant",
+    "title": "Ri",
+    "symbol": "R",
+    "value": 1.0973731568539
+  },
+  "W": {
+    "name": "Wallis Constant",
+    "title": "W",
+    "symbol": "W",
+    "value": 2.0945514815423265
+  },
+  "c12": {
+    "name": "Atomic mass",
+    "title": "c12",
+    "symbol": "m<sub>u</sub>",
+    "value": 1.6605390395999472e-24
+  },
+  "g": {
+    "name": "Gravity of Earth",
+    "title": "g",
+    "symbol": "g",
+    "value": 9.80665
+  },
+  "gM": {
+    "name": "Gravity of Moon",
+    "title": "gM",
+    "symbol": "g<sub>M</sub>",
+    "value": 1.634441667
+  },
+  "gMr": {
+    "name": "Gravity of March",
+    "title": "gMr",
+    "symbol": "g<sub>Mr</sub>",
+    "value": 2.4516625
+  },
+  "ge": {
+    "name": "Gravity factor of electron",
+    "title": "ge",
+    "symbol": "g<sub>e</sub>",
+    "value": -2.00231930436256
+  },
+  "h": {
+    "name": "Planck constant",
+    "title": "h",
+    "symbol": "h",
+    "value": 6.62607004e-34
+  },
+  "mE": {
+    "name": "Mass of Earth",
+    "title": "mE",
+    "symbol": "m<sub>E</sub>",
+    "value": 5.97219e24
+  }
+}

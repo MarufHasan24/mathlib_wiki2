@@ -12,9 +12,29 @@
     <div class="firstBar"></div>
     <div class="secondBar"></div>
   </div>
-  </div>
+
   <!--loader end-->
   <div class="body Day">
+    <!-- Page map -->
+    <div class="pageMap">
+      <ul>
+        <li><a style="cursor:pointer" onclick="ACommon('functions')">Functions</a></li>
+        <li><a style="cursor:pointer" onclick="ACommon('constants')">Constants</a></li>
+        <li><a href="#contacts">contacts</a></li>
+        <li>
+          <a id="menuBtn" class="hover">menu</a>
+          <ul class="dropdown">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="author.html">about</a></li>
+            <li class="own"><a>Wiki</a></li>
+            <li><a href="extras.html">Extras</a></li>
+            <li><a href="https://www.npmjs.com/package/mathlib-n">Mathlib-n</a></li>
+            <li><a href="#contacts">contacts</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- logo -->
     <logo><img src="./MathlibLogo.jpg" alt="mathlib" /></logo>
     <div>
       <h1><a href="https://www.npmjs.com/package/mathlib-n">Mathlib</a></h1>
@@ -40,79 +60,162 @@
         this.
       </p>
     </div>
-    <div class="contentTable opend">
-      <h2 class="opener">Functions</h2>
-      <section class="main">
-        <div class="thead">
-          <div data-title="title">
-            <div class="title" style="text-align: center; padding: 1%">Name</div>
-            <div class="input" style="text-align: center; padding: 1%">
-              Input Types
+    <div class="contentTable opened">
+      <div class="btn">
+        <h2 class="opener">Functions</h2>
+        <h2 class="closer">constants</h2>
+      </div>
+      <div class="main">
+        <section class="functions">
+          <div class="thead">
+            <div data-title="title">
+              <div class="title" style="text-align: center; padding: 1%">Name</div>
+              <div class="input" style="text-align: center; padding: 1%">
+                Input Types
+              </div>
+              <div class="works" style="text-align: center; padding: 1%">Works</div>
             </div>
-            <div class="works" style="text-align: center; padding: 1%">Works</div>
           </div>
-        </div>
-        <div class="tbody">
-          <div class="Tbdy" data-title="age"></div>
-          <div class="Tbdy" data-title="average"></div>
-          <div class="Tbdy" data-title="c2Fr"></div>
-          <div class="Tbdy" data-title="caller"></div>
-          <div class="Tbdy" data-title="cm2In"></div>
-          <div class="Tbdy" data-title="combo"></div>
-          <div class="Tbdy" data-title="cosx"></div>
-          <div class="Tbdy" data-title="cosec"></div>
-          <div class="Tbdy" data-title="cot"></div>
-          <div class="Tbdy" data-title="dcm2Deg"></div>
-          <div class="Tbdy" data-title="dememo"></div>
-          <div class="Tbdy" data-title="deg2Dcm"></div>
-          <div class="Tbdy" data-title="deg2Rad"></div>
-          <div class="Tbdy" data-title="delmemo"></div>
-          <div class="Tbdy" data-title="fact"></div>
-          <div class="Tbdy" data-title="fr2C"></div>
-          <div class="Tbdy" data-title="fract"></div>
-          <div class="Tbdy" data-title="ft2M"></div>
-          <div class="Tbdy" data-title="GCD"></div>
-          <div class="Tbdy" data-title="in2Cm"></div>
-          <div class="Tbdy" data-title="km2Mile"></div>
-          <div class="Tbdy" data-title="leapYear"></div>
-          <div class="Tbdy" data-title="lineWidth"></div>
-          <div class="Tbdy" data-title="linearEq"></div>
-          <div class="Tbdy" data-title="logx"></div>
-          <div class="Tbdy" data-title="m2Ft"></div>
-          <div class="Tbdy" data-title="memo"></div>
-          <div class="Tbdy" data-title="mile2Km"></div>
-          <div class="Tbdy" data-title="multiply"></div>
-          <div class="Tbdy" data-title="odd"></div>
-          <div class="Tbdy" data-title="permut"></div>
-          <div class="Tbdy" data-title="polyArea"></div>
-          <div class="Tbdy" data-title="prime"></div>
-          <div class="Tbdy" data-title="quad"></div>
-          <div class="Tbdy" data-title="quadAngles"></div>
-          <div class="Tbdy" data-title="quadArea"></div>
-          <div class="Tbdy" data-title="quadCorners"></div>
-          <div class="Tbdy" data-title="quadLines"></div>
-          <div class="Tbdy" data-title="qudrt"></div>
-          <div class="Tbdy" data-title="rad2Deg"></div>
-          <div class="Tbdy" data-title="rand"></div>
-          <div class="Tbdy" data-title="rootx"></div>
-          <div class="Tbdy" data-title="sec"></div>
-          <div class="Tbdy" data-title="sinx"></div>
-          <div class="Tbdy" data-title="sums"></div>
-          <div class="Tbdy" data-title="tanx"></div>
-          <div class="Tbdy" data-title="tringle"></div>
-          <div class="Tbdy" data-title="tringleAngles"></div>
-          <div class="Tbdy" data-title="tringleArea"></div>
-          <div class="Tbdy" data-title="tringleLines"></div>
-        </div>
-      </section>
+          <div class="tbody">
+            <div class="Tbdy" data-title="age"></div>
+            <div class="Tbdy" data-title="average"></div>
+            <div class="Tbdy" data-title="c2Fr"></div>
+            <div class="Tbdy" data-title="caller"></div>
+            <div class="Tbdy" data-title="cm2In"></div>
+            <div class="Tbdy" data-title="combo"></div>
+            <div class="Tbdy" data-title="cosx"></div>
+            <div class="Tbdy" data-title="cosec"></div>
+            <div class="Tbdy" data-title="cot"></div>
+            <div class="Tbdy" data-title="dcm2Deg"></div>
+            <div class="Tbdy" data-title="deMemo"></div>
+            <div class="Tbdy" data-title="deg2Dcm"></div>
+            <div class="Tbdy" data-title="deg2Rad"></div>
+            <div class="Tbdy" data-title="delMemo"></div>
+            <div class="Tbdy" data-title="delRecord"></div>
+            <div class="Tbdy" data-title="fact"></div>
+            <div class="Tbdy" data-title="fr2C"></div>
+            <div class="Tbdy" data-title="fract"></div>
+            <div class="Tbdy" data-title="ft2M"></div>
+            <div class="Tbdy" data-title="GCD"></div>
+            <div class="Tbdy" data-title="in2Cm"></div>
+            <div class="Tbdy" data-title="intersect"></div>
+            <div class="Tbdy" data-title="km2Mile"></div>
+            <div class="Tbdy" data-title="LCM"></div>
+            <div class="Tbdy" data-title="leapYear"></div>
+            <div class="Tbdy" data-title="lineWidth"></div>
+            <div class="Tbdy" data-title="linearEq"></div>
+            <div class="Tbdy" data-title="logx"></div>
+            <div class="Tbdy" data-title="m2Ft"></div>
+            <div class="Tbdy" data-title="memo"></div>
+            <div class="Tbdy" data-title="mile2Km"></div>
+            <div class="Tbdy" data-title="multiply"></div>
+            <div class="Tbdy" data-title="odd"></div>
+            <div class="Tbdy" data-title="permut"></div>
+            <div class="Tbdy" data-title="polyArea"></div>
+            <div class="Tbdy" data-title="prime"></div>
+            <div class="Tbdy" data-title="quad"></div>
+            <div class="Tbdy" data-title="quadAngles"></div>
+            <div class="Tbdy" data-title="quadArea"></div>
+            <div class="Tbdy" data-title="quadCorners"></div>
+            <div class="Tbdy" data-title="quadLines"></div>
+            <div class="Tbdy" data-title="qudrt"></div>
+            <div class="Tbdy" data-title="rad2Deg"></div>
+            <div class="Tbdy" data-title="rand"></div>
+            <div class="Tbdy" data-title="read"></div>
+            <div class="Tbdy" data-title="restore"></div>
+            <div class="Tbdy" data-title="rootx"></div>
+            <div class="Tbdy" data-title="sec"></div>
+            <div class="Tbdy" data-title="sinx"></div>
+            <div class="Tbdy" data-title="sum"></div>
+            <div class="Tbdy" data-title="sums"></div>
+            <div class="Tbdy" data-title="tanx"></div>
+            <div class="Tbdy" data-title="tringle"></div>
+            <div class="Tbdy" data-title="tringleAngles"></div>
+            <div class="Tbdy" data-title="tringleArea"></div>
+            <div class="Tbdy" data-title="tringleLines"></div>
+            <div class="Tbdy" data-title="tringleMed"></div>
+            <div class="Tbdy" data-title="union"></div>
+          </div>
+        </section>
+        <section class="constants">
+          <div class="thead">
+            <div data-title="title">
+              <div class="title" style="text-align: center">Name</div>
+              <div class="name" style="text-align: center">Full form</div>
+              <div class="symbol" style="text-align: center">Symbol</div>
+              <div class="value" style="text-align: center">Value</div>
+            </div>
+          </div>
+          <div class="tbody">
+            <div class="Tbdy" data-title="B3"></div>
+            <div class="Tbdy" data-title="Ce"></div>
+            <div class="Tbdy" data-title="Cp"></div>
+            <div class="Tbdy" data-title="F"></div>
+            <div class="Tbdy" data-title="G"></div>
+            <div class="Tbdy" data-title="G0"></div>
+            <div class="Tbdy" data-title="G1"></div>
+            <div class="Tbdy" data-title="K"></div>
+            <div class="Tbdy" data-title="Me"></div>
+            <div class="Tbdy" data-title="Mn"></div>
+            <div class="Tbdy" data-title="Mp"></div>
+            <div class="Tbdy" data-title="Na"></div>
+            <div class="Tbdy" data-title="Phi"></div>
+            <div class="Tbdy" data-title="Ri"></div>
+            <div class="Tbdy" data-title="W"></div>
+            <div class="Tbdy" data-title="c"></div>
+            <div class="Tbdy" data-title="c12"></div>
+            <div class="Tbdy" data-title="g"></div>
+            <div class="Tbdy" data-title="gM"></div>
+            <div class="Tbdy" data-title="gMr"></div>
+            <div class="Tbdy" data-title="ge"></div>
+            <div class="Tbdy" data-title="h"></div>
+            <div class="Tbdy" data-title="mE"></div>
+          </div>
+        </section>
+      </div>
     </div>
+
+    <footer class="contact" data-species="section" id="contacts">
+      <div class="contacts">
+        <h4>contacts</h4>
+        <ul>
+          <li><span class="logo">v</span><a href="tel:+880 1730 888 193">+880 1730 888 193</a></li>
+          <li><span class="logo">
+              < </span><a href="https://github.com/MarufHasan24/mathlib/tree/master">Github</a></li>
+          <li><span class="logo">f</span><a href="https://www.facebook.com/profile.php?id=100051432031850">Maruf
+              hasan</a></li>
+          <li><span class="logo">?</span><a href="https://marufhasan24.github.io/mathlib_wiki2/">Mathlib</a></li>
+          <li><span class="logo">{</span><a href="mailto:maruf.cappro21@gmail.com">maruf.cappro21@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="menu">
+        <h4>menu</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="author.html">Author</a></li>
+          <li><a style="font-weight: 800;" href="wiki.html">Wiki</a></li>
+          <li><a href="extras.html">Extras</a></li>
+          <li><a href="https://www.npmjs.com/package/mathlib-n">mathlib-n</a></li>
+        </ul>
+      </div>
+      <div class="keywords">
+        <h4>keywords</h4>
+        <ul>
+          <li><span class="anime">math</span></li>
+          <li><span class="anime">mathjs</span></li>
+          <li><span class="anime">math laibrary</span></li>
+          <li><span class="anime">mathlib</span></li>
+          <li><span class="anime">mathlib-n</span></li>
+        </ul>
+      </div>
+    </footer>
     <div id="nightMood">
       <img src="outline_light_mode_black_24dp.png" alt="DayNight" />
     </div>
   </div>
-  </div>
 </body>
 <script src="loader.js"></script>
 <script src="wiki.js"></script>
+<script src="common.js"></script>
 
 </html>
